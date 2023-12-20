@@ -1,0 +1,20 @@
+/* Error: Undefined mixin.
+ *    ,
+ * 14 | /         @include flex_base_template(space-evenly,
+ * 15 | |             row,
+ * 16 | |             wrap,
+ * 17 | |             stretch);
+ *    | '--------------------^
+ *    '
+ *   pets\src\stylesheets\scss\main\u-can-help.scss 14:9  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 14 \2502  \250c          @include flex_base_template(space-evenly,\a 15 \2502  \2502              row,\a 16 \2502  \2502              wrap,\a 17 \2502  \2502              stretch);\a    \2502  \2514 \2500 \2500 \2500 \2500 \2500 \2500 \2500 \2500 \2500 \2500 \2500 \2500 \2500 \2500 \2500 \2500 \2500 \2500 \2500 \2500 ^\a    \2575 \a   pets\\src\\stylesheets\\scss\\main\\u-can-help.scss 14:9  root stylesheet";
+}

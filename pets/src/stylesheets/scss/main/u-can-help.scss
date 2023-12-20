@@ -1,0 +1,29 @@
+.u-can-help {
+
+    // display: flex;
+    font-family: Georgia, 'Times New Roman', Times, serif
+    ;
+    &__header {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    &__icons-list {
+        margin: 3rem 3rem;
+        // width: 100%;
+        @include flex_base_template(space-evenly,
+            row,
+            wrap,
+            stretch);
+    }
+
+    img {
+        width: 4rem;
+        margin: 2rem 5rem;
+    }
+
+    figcaption {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}

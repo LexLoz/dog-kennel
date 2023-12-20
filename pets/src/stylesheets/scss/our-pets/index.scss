@@ -1,0 +1,11 @@
+@import "../fonts.scss";
+
+@import "../global-classes.scss";
+@import "../colors";
+@import "../mixins";
+    
+@include index_template();
+
+@import "header";
+@import "choose-pet";
+@import "footer";

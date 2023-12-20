@@ -1,0 +1,8 @@
+header {
+    // @include flex_base_template(center);
+    @include header_template();
+
+    a {
+        color: white;
+    }
+}

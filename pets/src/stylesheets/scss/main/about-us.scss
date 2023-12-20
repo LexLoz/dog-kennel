@@ -1,0 +1,40 @@
+.about-us {
+    @include flex_base_template(center);
+    align-items: center;
+
+    padding: 5rem 0;
+
+    &__text {
+        margin-left: 5%;
+        width: 30%;
+    }
+
+    &__header {
+        font-size: 2rem;
+        width: 70%;
+        color: #545454;
+        // text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    &__paragraph {
+        color: #4C4C4C;
+        margin-top: 2rem;
+        font-size: 0.9rem;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column-reverse;
+
+        &__text {
+            margin-bottom: 1rem;
+            width: 75%;
+        }
+
+        &__header {
+            width: 100%;
+        }
+
+    }
+}

@@ -1,0 +1,10 @@
+header {
+    // @include flex_base_template(center);
+    @include header_template();
+    position: inherit;
+    color: #545454;
+
+    a {
+        color: #545454;
+    }
+}

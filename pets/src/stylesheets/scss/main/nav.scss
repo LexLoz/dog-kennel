@@ -1,0 +1,80 @@
+nav {
+    padding-top: 10rem;
+    background: $background-gradient;
+}
+
+.nav {
+    @include flex_base_template();
+    color: white;
+    // width: 95%;
+    justify-content: space-between;
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+    }
+
+    &__header {
+        margin-top: 1rem;
+        width: 50%;
+        font-size: 2rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    &__paragraph {
+        width: 60%;
+        margin-top: 2rem;
+        line-height: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        color: #CDCDCD;
+        text-align: justify;
+    }
+
+    &__button {
+        display: inline;
+        position: relative;
+        top: 3rem;
+        font-size: 0.8rem;
+
+        border-radius: 100px;
+        background: var(--color-primary, #F1CDB3);
+        padding: 0.8rem 2rem;
+        text-align: center;
+        color: black;
+
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    // &__image {
+    //     width: calc(20% + 15rem);
+    // }
+
+    img {
+        width: 80%;
+    }
+
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 100%;
+        }
+
+        &__text {
+            width: 95%;
+            text-align: center;
+            justify-content: center;
+            // align-items: center;
+        }
+
+        &__image {
+            margin-top: 7rem;
+            // width: 100%;
+        }
+    }
+}
